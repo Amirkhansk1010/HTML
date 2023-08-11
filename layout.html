@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 0.2rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: lightsalmon;
+            padding: 10px 25px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+        #section {
+            grid-area: section;
+        }
+        #aside {
+            grid-area: aside;
+        }
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home  about-us  contact-us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora ipsam quibusdam ex asperiores, facilis expedita corporis exercitationem voluptatum! Animi rerum exercitationem dolorum magnam recusandae. Commodi ullam dicta laborum ducimus soluta aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facere veniam accusamus labore, sapiente dolore. Earum laudantium eos officia, sed libero pariatur similique unde ipsum itaque dolorem quibusdam officiis natus sunt quo enim? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, illo necessitatibus cum impedit vitae nihil, voluptatum repudiandae eius asperiores recusandae consectetur cupiditate.
+        </div>
+        <div id="aside" class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ratione mollitia necessitatibus architecto, voluptatem, quisquam, rem tenetur cumque vero quibusdam at laborum praesentium!
+            Voluptatibus sint nostrum ratione velit, minus molestias praesentium modi debitis, atque porro in similique veritatis, natus vel libero fugit incidunt tempore totam quos.
+            Libero modi hic quia accusantium sit, esse debitis. Vero ratione dolorem voluptate quod id corrupti asperiores, voluptatibus voluptatum libero. Enim, natus. Veritatis, animi.
+        </div>
+        <div id="footer" class="item">
+            This is the footer of the layout............
+        </div>
+    </div>
+</body>
+</html>
